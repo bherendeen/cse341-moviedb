@@ -2,6 +2,7 @@
 // addon mods
 const express = require('express');
 const bodyParser = require('body-parser');
+var cors = require('cors');
 const swaggerUi = require('swagger-ui-express');
 // custom mods
 const mongodb = require('./db/connection');
@@ -19,6 +20,7 @@ const swaggerDocument = require('./swagger.json');
 app
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
   .use(bodyParser.json())
+  .use(cors())
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-with, Content-Type, Accept, Z-Key');
