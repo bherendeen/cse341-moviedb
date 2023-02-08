@@ -5,7 +5,7 @@
     "description": "Movie DB",
     "version": "1.0.0"
   },
-  "host": "https://cse341-moviedb-project.onrender.com",
+  "host": "cse341-moviedb-project.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
