@@ -1,0 +1,14 @@
+# Node Modles
+node_modules
+
+# For ES11 version
+.jshintrc
+
+# Text info file
+info.txt
+
+# env
+.env
+
+user.json
+movie.json

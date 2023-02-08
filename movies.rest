@@ -1,0 +1,176 @@
+// LOCALHOST
+###
+
+### get all movies
+GET http://localhost:8080/movies
+
+### get single movie
+GET http://localhost:8080/movies/632a32d474be5f4eb6a11c73
+
+### create movie
+POST http://localhost:8080/movies HTTP/1.1 
+content-type: application/json
+
+{
+        "title": "Top Gun: Maverick",
+        "imageURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.YgpfQQJXKCzYc9h_1KQdkAHaLH%26pid%3DApi&f=1&ipt=1e6149a297a34abc0dde40269f737da86478b0642a3701945363b6246b9af858&ipo=images",
+        "description": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.",
+        "rating": "PG-13",
+        "releaseYear": 2022,
+        "movieHours": 2,
+        "movieMinutes": 10,
+        "genreAction": true,
+        "genreAdventure": false,
+        "genreAnimation": false,
+        "genreBiography": false,
+        "genreComedy": false,
+        "genreCrime": false,
+        "genreDocumentary": false,
+        "genreDrama": true,
+        "genreFamily": false,
+        "genreFantasy": false,
+        "genreHistory": false,
+        "genreHorror": false,
+        "genreMusic": false,
+        "genreMusical": false,
+        "genreMystery": false,
+        "genreRomance": false,
+        "genreSciFi": false,
+        "genreShortFilm": false,
+        "genreSport": false,
+        "genreSuperhero": false,
+        "genreThriller": false,
+        "genreWar": true,
+        "genreWestern": false,
+        "moviePreview": "https://www.youtube.com/watch?v=giXco2jaZ_4"
+}
+
+### update movie
+PUT http://localhost:8080/movies/63dd4109ed31d0e971ca1132 HTTP/1.1 
+content-type: application/json
+
+{
+        "title": "Top Gun: Maverick",
+        "imageURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.YgpfQQJXKCzYc9h_1KQdkAHaLH%26pid%3DApi&f=1&ipt=1e6149a297a34abc0dde40269f737da86478b0642a3701945363b6246b9af858&ipo=images",
+        "description": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.",
+        "rating": "PG-13",
+        "releaseYear": 2023,
+        "movieHours": 2,
+        "movieMinutes": 10,
+        "genreAction": true,
+        "genreAdventure": false,
+        "genreAnimation": false,
+        "genreBiography": false,
+        "genreComedy": false,
+        "genreCrime": false,
+        "genreDocumentary": false,
+        "genreDrama": true,
+        "genreFamily": false,
+        "genreFantasy": false,
+        "genreHistory": false,
+        "genreHorror": false,
+        "genreMusic": false,
+        "genreMusical": false,
+        "genreMystery": false,
+        "genreRomance": false,
+        "genreSciFi": false,
+        "genreShortFilm": false,
+        "genreSport": false,
+        "genreSuperhero": false,
+        "genreThriller": false,
+        "genreWar": true,
+        "genreWestern": false,
+        "moviePreview": "https://www.youtube.com/watch?v=giXco2jaZ_4"
+}
+
+### delete movie
+DELETE http://localhost:8080/movies/63dc4206dbf670467197d0c2 HTTP/1.1 
+
+###
+// PRODUCTION
+###
+
+### get all movies
+GET https://bherendeen-cse341.onrender.com/movies
+
+### get single movie
+GET https://bherendeen-cse341.onrender.com/movies/632a32d474be5f4eb6a11c73
+
+### create movie
+POST https://bherendeen-cse341.onrender.com/movies HTTP/1.1 
+content-type: application/json
+
+{
+        "title": "Top Gun: Maverick",
+        "imageURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.YgpfQQJXKCzYc9h_1KQdkAHaLH%26pid%3DApi&f=1&ipt=1e6149a297a34abc0dde40269f737da86478b0642a3701945363b6246b9af858&ipo=images",
+        "description": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.",
+        "rating": "PG-13",
+        "releaseYear": 2022,
+        "movieHours": 2,
+        "movieMinutes": 10,
+        "genreAction": true,
+        "genreAdventure": false,
+        "genreAnimation": false,
+        "genreBiography": false,
+        "genreComedy": false,
+        "genreCrime": false,
+        "genreDocumentary": false,
+        "genreDrama": true,
+        "genreFamily": false,
+        "genreFantasy": false,
+        "genreHistory": false,
+        "genreHorror": false,
+        "genreMusic": false,
+        "genreMusical": false,
+        "genreMystery": false,
+        "genreRomance": false,
+        "genreSciFi": false,
+        "genreShortFilm": false,
+        "genreSport": false,
+        "genreSuperhero": false,
+        "genreThriller": false,
+        "genreWar": true,
+        "genreWestern": false,
+        "moviePreview": "https://www.youtube.com/watch?v=giXco2jaZ_4"
+}
+
+### update movie
+PUT https://bherendeen-cse341.onrender.com/movies/63c97e11b99bdf39d8593345 HTTP/1.1 
+content-type: application/json
+
+{
+        "title": "Top Gun: Maverick",
+        "imageURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.YgpfQQJXKCzYc9h_1KQdkAHaLH%26pid%3DApi&f=1&ipt=1e6149a297a34abc0dde40269f737da86478b0642a3701945363b6246b9af858&ipo=images",
+        "description": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.",
+        "rating": "PG-13",
+        "releaseYear": 2022,
+        "movieHours": 2,
+        "movieMinutes": 10,
+        "genreAction": true,
+        "genreAdventure": false,
+        "genreAnimation": false,
+        "genreBiography": false,
+        "genreComedy": false,
+        "genreCrime": false,
+        "genreDocumentary": false,
+        "genreDrama": true,
+        "genreFamily": false,
+        "genreFantasy": false,
+        "genreHistory": false,
+        "genreHorror": false,
+        "genreMusic": false,
+        "genreMusical": false,
+        "genreMystery": false,
+        "genreRomance": false,
+        "genreSciFi": false,
+        "genreShortFilm": false,
+        "genreSport": false,
+        "genreSuperhero": false,
+        "genreThriller": false,
+        "genreWar": true,
+        "genreWestern": false,
+        "moviePreview": "https://www.youtube.com/watch?v=giXco2jaZ_4"
+}
+
+### delete movie
+DELETE https://bherendeen-cse341.onrender.com/movies/63c97e11b99bdf39d8593345 HTTP/1.1 

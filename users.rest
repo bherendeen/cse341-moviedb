@@ -1,0 +1,88 @@
+// LOCALHOST
+###
+
+### get all users
+GET http://localhost:8080/users
+
+### get single user
+GET http://localhost:8080/users/63dc26380b1663a18b03bb91
+
+### create user
+POST http://localhost:8080/users HTTP/1.1 
+content-type: application/json
+
+
+  {
+      "firstName": "Jason",
+      "lastName": "Miller",
+      "username": "jmiller",
+      "email": "jmiller@email.com",
+      "password": "mypassword",
+      "profileImg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.vkOK0lMVk_0O-xq6JSvJgAHaHa%26pid%3DApi&f=1&ipt=b2353421bcaa83bc8f8116916298eb0f9e9fc8e97888d08bf31da8ca1db0302d&ipo=images",
+      "isAdmin": false
+    }
+
+
+### update user
+PUT http://localhost:8080/users/63c97dcb2c31f8a6235c48a9 HTTP/1.1 
+content-type: application/json
+
+
+  {
+      "firstName": "Jason",
+      "lastName": "Miller",
+      "username": "jmiller",
+      "email": "jmiller@email.com",
+      "password": "mypassword",
+      "profileImg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.vkOK0lMVk_0O-xq6JSvJgAHaHa%26pid%3DApi&f=1&ipt=b2353421bcaa83bc8f8116916298eb0f9e9fc8e97888d08bf31da8ca1db0302d&ipo=images",
+      "isAdmin": false
+    }
+
+
+### delete user
+DELETE http://localhost:8080/users/63c97dcb2c31f8a6235c48a9 HTTP/1.1 
+
+###
+// PRODUCTION
+###
+
+### get all users
+GET https://bherendeen-cse341.onrender.com/users
+
+### get single user
+GET https://bherendeen-cse341.onrender.com/users/632a32d474be5f4eb6a11c73
+
+### create user
+POST https://bherendeen-cse341.onrender.com/users HTTP/1.1 
+content-type: application/json
+
+
+  {
+      "firstName": "Jason",
+      "lastName": "Miller",
+      "username": "jmiller",
+      "email": "jmiller@email.com",
+      "password": "mypassword",
+      "profileImg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.vkOK0lMVk_0O-xq6JSvJgAHaHa%26pid%3DApi&f=1&ipt=b2353421bcaa83bc8f8116916298eb0f9e9fc8e97888d08bf31da8ca1db0302d&ipo=images",
+      "isAdmin": false
+    }
+
+
+### update user
+PUT https://bherendeen-cse341.onrender.com/users/63c97e11b99bdf39d8593345 HTTP/1.1 
+content-type: application/json
+
+
+  {
+      "firstName": "Jason",
+      "lastName": "Miller",
+      "username": "jmiller",
+      "email": "jmiller@email.com",
+      "password": "mypassword",
+      "profileImg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.vkOK0lMVk_0O-xq6JSvJgAHaHa%26pid%3DApi&f=1&ipt=b2353421bcaa83bc8f8116916298eb0f9e9fc8e97888d08bf31da8ca1db0302d&ipo=images",
+      "isAdmin": false
+    }
+
+
+### delete user
+DELETE https://bherendeen-cse341.onrender.com/users/63c97e11b99bdf39d8593345 HTTP/1.1 

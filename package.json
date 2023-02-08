@@ -1,0 +1,33 @@
+{
+  "name": "cse341",
+  "version": "1.0.0",
+  "description": "cse341",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "devStart": "nodemon app.js",
+    "swagger": "node ./swagger.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bherendeen/cse341-node.git"
+  },
+  "author": "Benjamin Herendeen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bherendeen/cse341-node/issues"
+  },
+  "homepage": "https://github.com/bherendeen/cse341-node#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^4.13.0",
+    "swagger-ui-express": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "swagger-autogen": "^2.22.0"
+  }
+}
