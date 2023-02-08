@@ -2,9 +2,9 @@ const validator = require('../helper/validate');
 
 exports.createUserValidate = async (req, res, next) => {
     const validationRule = {
-        "firstName": "required|string",
-        "lastName": "required|string",
-        "username ": "required|string",
+        "firstName": ["required", "regex:/^[A-Za-z]+$/"],
+        "lastName": ["required", "regex:/^[A-Za-z]+$/"],
+        "username": ["required", "regex:/^[A-Za-z]+$/"],
         "email": "required|string|email",
         "password": ["required", "regex:/^(?=[^a-z]*[a-z])(?=[^A-Z]*[A-Z])(?=\\D*\\d)(?=[^!@#$%^&*]*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,32}$/"],
         "profileImg": "required|string",
