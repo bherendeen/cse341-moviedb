@@ -202,6 +202,9 @@
                 "genreAdventure": {
                   "example": "any"
                 },
+                "genreAnimation": {
+                  "example": "any"
+                },
                 "genreBiography": {
                   "example": "any"
                 },
@@ -308,11 +311,14 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
       "post": {
-        "description": "",
+        "description": "Password: At least 1 lowercase, 1 uppercase, 1 number, 1 special charater [ !@#$%^&* ], 8-32 characters long",
         "parameters": [
           {
             "name": "body",
@@ -349,6 +355,9 @@
           "201": {
             "description": "Created"
           },
+          "412": {
+            "description": "Precondition Failed"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -372,6 +381,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
@@ -419,6 +431,12 @@
           "201": {
             "description": "Created"
           },
+          "400": {
+            "description": "Bad Request"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -437,6 +455,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
