@@ -44,7 +44,9 @@ exports.getSingle = async (req, res, next) => {
 };
 // create user
 exports.createUser = async (req, res, next) => {
-    // #swagger.description = 'Password: At least 1 lowercase, 1 uppercase, 1 number, 1 special charater [ !@#$%^&* ], 8-32 characters long'
+    /*
+    #swagger.description = 'Password: At least 1 lowercase, 1 uppercase, 1 number, 1 special charater [ !@#$%^&* ], 8-32 characters long'
+    */
     const newUser = {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
@@ -69,6 +71,9 @@ exports.createUser = async (req, res, next) => {
 
 // update user
 exports.updateUser = async (req, res, next) => {
+    /*
+    #swagger.description = 'Password: At least 1 lowercase, 1 uppercase, 1 number, 1 special charater [ !@#$%^&* ], 8-32 characters long'
+    */
     // check if id from params is valid
     if (!ObjectId.isValid(req.params.userId)) {
         res.status(400).json('Must use a valid contact id to find a contact.');
