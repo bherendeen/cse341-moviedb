@@ -2,16 +2,16 @@
 // addon mods
 const express = require('express');
 // custom mods
+const usersController = require('../controller/userController');
 const userValidation = require('../middleware/userValidation');
 // use router
 const router = express.Router();
 
-const usersController = require('../controller/users');
 
 // routes
-router.get('/', usersController.getAll);
+router.get('/', usersController.getAllUsers);
 
-router.get('/:userId', usersController.getSingle);
+router.get('/:userId', usersController.getSingleUser);
 
 router.post('/', userValidation.createUserValidate, usersController.createUser);
 

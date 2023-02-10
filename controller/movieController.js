@@ -2,7 +2,7 @@ const mongodb = require('../db/connection');
 const ObjectId = require('mongodb').ObjectId;
 
 // get all movies
-exports.getAll = (req, res, next) => {
+exports.getAllMovies = (req, res, next) => {
     mongodb
         .getDb()
         .db('moviedb')
@@ -20,7 +20,7 @@ exports.getAll = (req, res, next) => {
 };
 
 // get a single movie
-exports.getSingle = (req, res, next) => {
+exports.getSingleMovie = (req, res, next) => {
     // check if id from params is valid
     if (!ObjectId.isValid(req.params.userId)) {
         res.status(400).json('Must use a valid contact id to find a contact.');
@@ -156,8 +156,8 @@ exports.updateMovie = async (req, res, next) => {
 // delete movie
 exports.deleteMovie = async (req, res, next) => {
     // check if id from params is valid
-    if (!ObjectId.isValid(req.params.userId)) {
-        res.status(400).json('Must use a valid contact id to find a contact.');
+    if (!ObjectId.isValid(req.params.movieId)) {
+        res.status(400).json('Must use a valid movie id to find a contact.');
     }
     const movieId = new ObjectId(req.params.movieId); // get the id entered in the url
     const result = await mongodb

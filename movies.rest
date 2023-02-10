@@ -84,20 +84,20 @@ content-type: application/json
 }
 
 ### delete movie
-DELETE http://localhost:8080/movies/63dc4206dbf670467197d0c2 HTTP/1.1 
+DELETE http://localhost:8080/movies/63e5d21c10eb8bc5c49276a3 HTTP/1.1 
 
 ###
 // PRODUCTION
 ###
 
 ### get all movies
-GET https://bherendeen-cse341.onrender.com/movies
+GET https://cse341-moviedb-project.onrender.com/movies
 
 ### get single movie
-GET https://bherendeen-cse341.onrender.com/movies/632a32d474be5f4eb6a11c73
+GET https://cse341-moviedb-project.onrender.com/movies/632a32d474be5f4eb6a11c73
 
 ### create movie
-POST https://bherendeen-cse341.onrender.com/movies HTTP/1.1 
+POST https://cse341-moviedb-project.onrender.com/movies HTTP/1.1 
 content-type: application/json
 
 {
@@ -135,7 +135,7 @@ content-type: application/json
 }
 
 ### update movie
-PUT https://bherendeen-cse341.onrender.com/movies/63c97e11b99bdf39d8593345 HTTP/1.1 
+PUT https://cse341-moviedb-project.onrender.com/movies/63c97e11b99bdf39d8593345 HTTP/1.1 
 content-type: application/json
 
 {
@@ -173,4 +173,4 @@ content-type: application/json
 }
 
 ### delete movie
-DELETE https://bherendeen-cse341.onrender.com/movies/63c97e11b99bdf39d8593345 HTTP/1.1 
+DELETE https://cse341-moviedb-project.onrender.com/movies/63c97e11b99bdf39d8593345 HTTP/1.1 
